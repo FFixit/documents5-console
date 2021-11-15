@@ -1,0 +1,18 @@
+{
+  "name": "fdc",
+  "version": "1.0.0",
+  "description": "Felix Documents Console",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@otris/node-sds": "^2.4.2",
+    "http": "0.0.1-security",
+    "node-static": "^0.7.11",
+    "ws": "^8.2.3"
+  }
+}
