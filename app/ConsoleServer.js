@@ -50,9 +50,12 @@ export default class ConsoleServer {
                 console.error('ConsoleServer: on message: error while parsing data:', error)
             }
 
-            // TODO validateConnectData throwt error
-            if (parsed.action === 'connect' && this.#validateConnectData(parsed)) {
-                this.#connectClientToConsole(client, parsed.hostname, parsed.port)
+            try {
+                if (parsed.action === 'connect' && this.#validateConnectData(parsed)) {
+                    this.#connectClientToConsole(client, parsed.hostname, parsed.port)
+                }
+            } catch (error) {
+                client.send(JSON.stringify({ error: `${error.toString()}` }))
             }
         })
     }
