@@ -50,9 +50,10 @@ div#form input:focus {
     outline: none;
 }
 
-div#console-container{
+div#console-container {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-end;
     height: 100vh;
     overflow: auto;
 }
@@ -67,7 +68,7 @@ ol#console {
 
 ol#console > li {
     counter-increment: count;
-    white-space: break-spaces;
+    white-space: nowrap;
     position: relative;
     padding: 0 0 0.5em 3em;
 }
