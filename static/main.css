@@ -51,11 +51,10 @@ div#form input:focus {
 }
 
 div#console-container {
+    overflow: auto;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-end;
-    height: 100vh;
-    overflow: auto;
+    max-height: 100vh;
 }
 
 ol#console {
