@@ -67,7 +67,7 @@ ol#console {
 
 ol#console > li {
     counter-increment: count;
-    white-space: nowrap;
+    white-space: break-spaces;
     position: relative;
     padding: 0 0 0.5em 3em;
 }
