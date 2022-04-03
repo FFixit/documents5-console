@@ -29,7 +29,7 @@ Description=Felix Documents Console
 [Service]
 Type=simple
 WorkingDirectory=$PWD
-ExecStart=node $PWD | tee -a $LOG_DIRECTORY/output.log
+ExecStart=node $PWD
 
 [Install]
 WantedBy=multi-user.target
