@@ -5,8 +5,6 @@ SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
 
 echo "### NPM INSTALL"
 npm install
-cd ./backend/ && npm install
-cd ./frontend/ && npm install
 
 echo "### BUILDING FRONTEND"
 npm run build

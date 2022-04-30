@@ -4,6 +4,7 @@
     "description": "This is a webapp through which you can view a live feed of logs/console messages which get output by a [otris documents 5 server](https://www.otris.de/wiki/aktenverwaltung/dokumenten-management-system-dms/).",
     "main": "",
     "scripts": {
+        "install": "npm install ./frontend/ && npm install ./backend/",
         "dev": "concurrently \"FRONTEND_DIST_DIR=./frontend/dist node backend\" \"cd frontend && npm run dev\"",
         "build": "cd frontend && npm run build",
         "preview": "cd frontend && npm run preview"
