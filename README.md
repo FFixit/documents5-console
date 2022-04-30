@@ -8,7 +8,7 @@ It hosts a simple NodeJs Server, which in the backend communicates with document
 -   Pull using `git pull https://github.com/FFixit/documents5-console.git`
 -   Navigate to the root directory of this project
 -   Install by running `npm install`
--   Run by executing `node .` or alternatively if you're on Linux and your OS uses systemd you can run `bash install.sh` to install a systemd service, which you can start by running `systemctl start documentsConsole` and stop by using `systemctl stop documentsConsole`.
+-   Run by executing `npm run build`, then `npm run prod` or alternatively if you're on Linux and your OS uses systemd you can run `bash install.sh` to install a systemd service, which you can start by running `systemctl start documentsConsole` and stop by using `systemctl stop documentsConsole`.
 
 ## How to use
 -   Open a browser and navigate to `localhost:8001`

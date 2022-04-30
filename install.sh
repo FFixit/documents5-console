@@ -29,7 +29,7 @@ Description=Documents Console
 Type=simple
 Environment="FRONTEND_DIST_DIR=./frontend/dist"
 WorkingDirectory=$PWD
-ExecStart=node ./backend/
+ExecStart=npm run prod
 
 [Install]
 WantedBy=multi-user.target

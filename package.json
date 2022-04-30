@@ -5,6 +5,7 @@
     "main": "",
     "scripts": {
         "install": "npm install ./frontend/ && npm install ./backend/",
+        "prod": "node ./backend/",
         "dev": "concurrently \"FRONTEND_DIST_DIR=./frontend/dist node backend\" \"cd frontend && npm run dev\"",
         "build": "cd frontend && npm run build",
         "preview": "cd frontend && npm run preview"
@@ -17,5 +18,9 @@
     "license": "MIT",
     "devDependencies": {
         "concurrently": "^7.1.0"
+    },
+    "dependencies": {
+        "documents-console-frontend": "file:frontend",
+        "fdc": "file:backend"
     }
 }
