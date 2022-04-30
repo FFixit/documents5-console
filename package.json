@@ -1,18 +1,20 @@
 {
-  "name": "fdc",
-  "version": "1.0.0",
-  "description": "Felix Documents Console",
-  "main": "app/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "type": "module",
-  "author": "Felix Fluegel",
-  "license": "MIT",
-  "dependencies": {
-    "@otris/node-sds": "^2.4.2",
-    "http": "^0.0.1-security",
-    "node-static": "^0.7.11",
-    "ws": "^8.5.0"
-  }
+    "name": "documents-console",
+    "version": "1.0.0",
+    "description": "This is a webapp through which you can view a live feed of logs/console messages which get output by a [otris documents 5 server](https://www.otris.de/wiki/aktenverwaltung/dokumenten-management-system-dms/).",
+    "main": "",
+    "scripts": {
+        "dev": "concurrently \"FRONTEND_DIST_DIR=./frontend/dist node backend\" \"cd frontend && npm run dev\"",
+        "build": "cd frontend && npm run build",
+        "preview": "cd frontend && npm run preview"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://intexDmsDev@dev.azure.com/intexDmsDev/toolbox/_git/console"
+    },
+    "author": "Felix Fluegel",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^7.1.0"
+    }
 }

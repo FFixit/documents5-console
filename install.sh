@@ -1,16 +1,17 @@
 
 SERVICE_NAME="documentsConsole"
 SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
-LOG_DIRECTORY="/var/log/${SERVICE_NAME}"
 
 
 echo "### NPM INSTALL"
 npm install
+cd ./backend/ && npm install
+cd ./frontend/ && npm install
 
+echo "### BUILDING FRONTEND"
+npm run build
 
 echo "\n### CREATING SERVICE"
-mkdir -p $LOG_DIRECTORY
-chmod o+rw $LOG_DIRECTORY
 
 if [ -f $FILE ]; then
     echo "Service already exists, removing service..."
@@ -24,12 +25,13 @@ fi
 
 cat > $SERVICE_FILE <<EOM
 [Unit]
-Description=Felix Documents Console
+Description=Documents Console
 
 [Service]
 Type=simple
+Environment="FRONTEND_DIST_DIR=./frontend/dist"
 WorkingDirectory=$PWD
-ExecStart=node $PWD
+ExecStart=node ./backend/
 
 [Install]
 WantedBy=multi-user.target

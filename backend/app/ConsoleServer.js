@@ -13,7 +13,8 @@ export default class ConsoleServer {
     #webSocketServer
 
     constructor() {
-        const staticFiles = new node_static.Server('./static')
+        const staticDir = process.env.FRONTEND_DIST_DIR
+        const staticFiles = new node_static.Server(staticDir)
         this.#httpServer = http
             .createServer((req, res) => {
                 staticFiles.serve(req, res)
