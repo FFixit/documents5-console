@@ -17,10 +17,11 @@
     "author": "Felix Fluegel",
     "license": "MIT",
     "devDependencies": {
-        "concurrently": "^7.1.0"
+        "concurrently": "^7.1.0",
+        "documents-console-backend": "file:backend",
+        "documents-console-frontend": "file:frontend"
     },
     "dependencies": {
-        "documents-console-frontend": "file:frontend",
         "fdc": "file:backend"
     }
 }

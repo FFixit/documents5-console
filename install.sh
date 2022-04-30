@@ -4,7 +4,7 @@ SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
 
 
 echo "### NPM INSTALL"
-npm install
+npm i -D
 
 echo "### BUILDING FRONTEND"
 npm run build

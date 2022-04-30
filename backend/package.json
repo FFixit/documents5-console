@@ -1,5 +1,5 @@
 {
-  "name": "fdc",
+  "name": "documents-console-backend",
   "version": "1.0.0",
   "description": "Felix Documents Console",
   "main": "app/index.js",
