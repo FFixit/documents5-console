@@ -9,7 +9,7 @@ npm i -D
 echo "### BUILDING FRONTEND"
 npm run build
 
-echo "\n### CREATING SERVICE"
+echo "### CREATING SERVICE"
 
 if [ -f $FILE ]; then
     echo "Service already exists, removing service..."
