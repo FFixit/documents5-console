@@ -19,7 +19,7 @@ It hosts a simple NodeJs Server, which in the backend communicates with document
 ### Run as a systemd service
 
 -   Install by running `npm install`
--   Run `bash install.sh` to install a systemd service, which you can start by running `systemctl start documentsConsole` and stop by using `systemctl stop documentsConsole`.
+-   Run `bash install_service.sh` to install a systemd service, which you can start by running `systemctl start documentsConsole` and stop by using `systemctl stop documentsConsole`.
 
 ### Run as a docker container
 
