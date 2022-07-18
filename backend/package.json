@@ -13,6 +13,6 @@
     "@otris/node-sds": "^2.4.2",
     "http": "^0.0.1-security",
     "node-static": "^0.7.11",
-    "ws": "^8.5.0"
+    "ws": "^8.8.1"
   }
 }
