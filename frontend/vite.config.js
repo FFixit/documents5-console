@@ -6,9 +6,10 @@ export default defineConfig({
             usePolling: true,
         },
         proxy: {
-            'ws://.*': {
+            '/backend': {
                 target: 'ws://localhost:8001',
                 changeOrigin: true,
+                secure: false,
                 ws: true,
             },
         },

@@ -19,7 +19,9 @@ export default class ConsoleServer {
             .createServer((req, res) => {
                 staticFiles.serve(req, res)
             })
-            .listen(8001)
+            .listen(8001,()=>{
+                console.log("backend started")
+            })
         this.#webSocketServer = new WebSocketServer({
             server: this.#httpServer,
             clientTracking: true,
